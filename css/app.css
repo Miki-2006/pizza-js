@@ -881,6 +881,9 @@ margin-bottom: 30px;
 }
 
 @media(max-width:800px) {
+    .wrapper{
+        margin: 20px auto;
+    }
     .content__title {
         display: flex;
         justify-content: center;
@@ -891,7 +894,6 @@ margin-bottom: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
 }
@@ -899,15 +901,42 @@ margin-bottom: 30px;
 
 
 @media(max-width:650px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .wrapper{
+        margin: 5px;
+        width: 90vw;
+    }
+    .header__logo h1{
+        font-size: 20px;
+    }
+    .header__logo p{
+        font-size: 14px;
+    }
     .button--cart {
         background-color: red;
+        padding: 7px 10px;
     }
-
+    .header__cart pre span{
+        font-size: 12px;
+        color: #fff;
+    }
+    .button__delimiter{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
     .header__cart {
         background-color: aqua;
     }
 
     .totalSum {
         padding-left: 1px;
+    }
+}
+@media (max-width: 490px) {
+    .wrapper{
+        width: 98vw;
     }
 }
